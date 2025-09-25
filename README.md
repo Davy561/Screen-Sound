@@ -3,7 +3,9 @@
 Bem-vindo ao **Screen Sound**!  
 Um projeto de console para exibição de mensagens estilizadas e interação básica via terminal.
 
-![Tela Inicial](assets/tela-inicial.png)
+<img width="1135" height="273" alt="image" src="https://github.com/user-attachments/assets/5becd08b-b2e1-4b2b-bd5d-ee08fc08e142" />
+
+
 
 ---
 
@@ -27,7 +29,8 @@ Um projeto de console para exibição de mensagens estilizadas e interação bá
 
 ### Tela de Boas-Vindas
 
-![Boas-vindas](assets/boas-vindas.png)
+<img width="457" height="86" alt="image" src="https://github.com/user-attachments/assets/00e23403-765e-4e42-a8de-c8bd482e4d81" />
+
 
 ---
 
