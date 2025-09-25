@@ -1,5 +1,12 @@
 ﻿// Screen Sound
 string MensagemDeVindas = "Boas vindas ao Screen Sound!!";
-Console.WriteLine(MensagemDeVindas);
-Console.WriteLine("Test");
+void ExibirMensagemDeBoasVindas()
+{
+   
+    Console.WriteLine("=====================================");
+    Console.WriteLine(MensagemDeVindas);
+    Console.WriteLine("=====================================");
+   
+}
+ExibirMensagemDeBoasVindas();
 //Padrão Camel Case - Letra maiúscula no começo
