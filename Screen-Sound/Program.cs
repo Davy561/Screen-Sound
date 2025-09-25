@@ -25,7 +25,7 @@ ExibirMensagemDeBoasVindas();
 void Exibirmenus()
 {
     
-    Console.WriteLine("1. Cadastras Bandas");
+    Console.WriteLine("\n1. Cadastras Bandas");
     Console.WriteLine("2. Listar Bandas");
     Console.WriteLine("3. Avaliar Bandas");
     Console.WriteLine("4. Avaliação Média das Bandas");
