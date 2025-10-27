@@ -74,16 +74,16 @@ void RegistrarBanda()
     ExibirLogo();
     Exibirmenus();
 }
-void MostrarBandas()
+void MostrarBandas() // função adicionada por conta própria sem auxilio de aula
 {
-    Console.Clear();
-    for (int i = 0; i < Listarbandas.Count; i++)
+    Console.Clear(); //ideia reutilizada da aula anterior  kkkk limpar o console antes de começar uma nova ação
+    for (int i = 0; i < Listarbandas.Count; i++) // loop for para contar a lista por inteiro e exibir ela após isso
     {
         Console.WriteLine(Listarbandas[i]);
     }
-    Thread.Sleep(2000);
-    Console.Clear();
-    Exibirmenus();
+    Thread.Sleep(2000);// espera dois milisegundos
+    Console.Clear();// limpa console
+    Exibirmenus();// chama os menus
 }
 Exibirmenus();
 
