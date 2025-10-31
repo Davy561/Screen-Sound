@@ -1,6 +1,6 @@
 ﻿// Screen Sound
 string MensagemDeVindas = "Boas vindas ao Screen Sound!!";
-List<string> Listarbandas = new List<string>();
+List<string> Listarbandas = new List<string> {"Oficina G3", "Resgate" };
 void ExibirLogo()
 {
     Console.WriteLine(@"
@@ -77,11 +77,16 @@ void RegistrarBanda()
 void MostrarBandas() // função adicionada por conta própria sem auxilio de aula
 {
     Console.Clear(); //ideia reutilizada da aula anterior  kkkk limpar o console antes de começar uma nova ação
+    Console.WriteLine("==================");
+    Console.WriteLine("Todas as bandas");
+    Console.WriteLine("==================");
     for (int i = 0; i < Listarbandas.Count; i++) // loop for para contar a lista por inteiro e exibir ela após isso
     {
-        Console.WriteLine(Listarbandas[i]);
+        Console.WriteLine($"{i + 1}: {Listarbandas[i]}");
+        //Console.WriteLine(Listarbandas[i]);
     }
     Thread.Sleep(2000);// espera dois milisegundos
+    Console.ReadKey();// Lê um botão como entrada, para fazer a próxima execução do código
     Console.Clear();// limpa console
     Exibirmenus();// chama os menus
 }
