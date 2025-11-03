@@ -25,7 +25,7 @@ void ExibirLogo()
 void Exibirmenus() // Isso é um chamada de função
 {
     ExibirLogo();// Já chama a logo mais a mensagem de boas vindas dentro do código evitando poluição no ambiente de produção
-    Console.WriteLine("\n1. Cadastras Bandas");
+    Console.WriteLine("\n1. Cadastrar Bandas");
     Console.WriteLine("2. Listar Bandas");
     Console.WriteLine("3. Avaliar Bandas");
     Console.WriteLine("4. Avaliação Média das Bandas");
@@ -80,11 +80,15 @@ void MostrarBandas() // função adicionada por conta própria sem auxilio de au
     Console.WriteLine("==================");
     Console.WriteLine("Todas as bandas");
     Console.WriteLine("==================");
-    for (int i = 0; i < Listarbandas.Count; i++) // loop for para contar a lista por inteiro e exibir ela após isso
+    foreach (string nomedabanda in Listarbandas)
     {
-        Console.WriteLine($"{i + 1}: {Listarbandas[i]}");
-        //Console.WriteLine(Listarbandas[i]);
+        Console.WriteLine(nomedabanda);
     }
+   // for (int i = 0; i < Listarbandas.Count; i++) // loop for para contar a lista por inteiro e exibir ela após isso
+  //  {
+  //      Console.WriteLine($"{i + 1}: {Listarbandas[i]}");// Mais uma descoberta solo kkkk enumeration list
+  //      //Console.WriteLine(Listarbandas[i]);
+  //  }
     Thread.Sleep(2000);// espera dois milisegundos
     Console.ReadKey();// Lê um botão como entrada, para fazer a próxima execução do código
     Console.Clear();// limpa console
