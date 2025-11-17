@@ -63,7 +63,7 @@ void Exibirmenus() // Isso é um chamada de função
 void RegistrarBanda()
 {
     Console.Clear();
-    Console.WriteLine("Registrar bandas\n");
+    Exibirastericos("Registrar bandas\n");
     Console.WriteLine("Qual banda você deseja resgistra hoje ?");
     string nomedabanda = Console.ReadLine()!;
     Listarbandas.Add(nomedabanda);
@@ -77,9 +77,7 @@ void RegistrarBanda()
 void MostrarBandas() // função adicionada por conta própria sem auxilio de aula
 {
     Console.Clear(); //ideia reutilizada da aula anterior  kkkk limpar o console antes de começar uma nova ação
-    Console.WriteLine("==================");
-    Console.WriteLine("Todas as bandas");
-    Console.WriteLine("==================");
+    Exibirastericos("Todas as bandas");
     foreach (string nomedabanda in Listarbandas)
     {
         Console.WriteLine(nomedabanda);
@@ -99,3 +97,12 @@ Exibirmenus();
 
 Console.ReadLine();
 //Padrão Camel Case - Letra maiúscula no começo
+void Exibirastericos(string titulo)
+{
+    int quantidadedeletras = titulo.Length;
+    string astericos = string.Empty.PadLeft(quantidadedeletras,'=');
+    Console.WriteLine(astericos);
+    Console.WriteLine(titulo);
+    Console.WriteLine(astericos + "\n");
+
+}
