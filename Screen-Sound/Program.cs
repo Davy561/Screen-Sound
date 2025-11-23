@@ -74,7 +74,7 @@ void RegistrarBanda()
     Listarbandas.Add(nomedabanda, new List<int>()); // Metódo dicionário
     Console.Clear();
     Console.WriteLine($"A banda {nomedabanda} foi registrada com sucesso!!");
-    Thread.Sleep( 2000 );
+    Thread.Sleep( 4000 );// Alterado o tempo de 2s para 4s
     Console.Clear();
     ExibirLogo();
     Exibirmenus();
@@ -112,10 +112,10 @@ void AvaliarBandas()
     }
     else
     {
+        Console.Clear();
         Console.WriteLine($"A banda {nomedabanda} não foi encontrado por favor verifique se a banda foi adicionado anteriormente no sistema");
         Console.WriteLine("Digite uma tecla para voltar ao menu principal");
         Console.ReadKey();
-        Console.Clear();
         Exibirmenus();
     }
      
