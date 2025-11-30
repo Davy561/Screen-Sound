@@ -108,7 +108,14 @@ void AvaliarBandas()
     // Para criar uma condição que comunique bem com a lista de bandas criadas é necessário usar a função (ContainsKey) para puxar somente as chaves das bandas, para poder procurar dentro da lista criada
     if (Listarbandas.ContainsKey(nomedabanda))
     {
-        Console.WriteLine($"A banda {nomedabanda} tem  ");
+        Console.WriteLine($"Qual a nota que a banda {nomedabanda}");
+        int nota = int.Parse(Console.ReadLine()!);// Esse ! no final da varíavel nota é para o valor não sair nulo
+        Listarbandas[nomedabanda].Add(nota); // Para adicionar a nota da banda na lista
+        Console.WriteLine($"\n A nota {nota} foi registrada com sucesso");
+        Thread.Sleep(2000);
+        Console.Clear();
+        Exibirmenus();
+
     }
     else
     {
