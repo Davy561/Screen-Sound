@@ -50,8 +50,8 @@ void Exibirmenus() // Isso é um chamada de função
         case 3: AvaliarBandas();
             Console.WriteLine();
         break;
-        case 4:
-            Console.WriteLine($"Você escolheu a opção " + opcaoescolhidanumerica);
+        case 4: MediaBanda();
+            Console.WriteLine();
         break;
         case -1:
             Console.WriteLine($"Você escolheu a opção " + opcaoescolhidanumerica);
@@ -127,6 +127,32 @@ void AvaliarBandas()
     }
      
 }
+
+void MediaBanda()
+{
+    Console.Clear();
+    Console.WriteLine("Exibir média da Banda");
+    Thread.Sleep(2000);
+    Console.WriteLine("Qual banda você deseja ver a média ?");
+    string banda = Console.ReadLine();
+     double mediabanda = Listarbandas[banda].Average(); // Função de média do C#
+    if (Listarbandas.ContainsKey(banda))
+    {
+        Console.WriteLine($"\n A média da banda {banda} é de {mediabanda}");
+        Thread.Sleep(4000);
+        Console.Clear();
+        Exibirmenus();
+    }
+    else
+    {
+        Console.Clear();
+        Console.WriteLine($"A banda {banda} não foi encontrado por favor verifique se a banda foi adicionado anteriormente no sistema");
+        Console.WriteLine("Digite uma tecla para voltar ao menu principal");
+        Console.ReadKey();
+        Exibirmenus();
+    }
+}
+
 
 Console.ReadLine();
 //Padrão Camel Case - Letra maiúscula no começo
